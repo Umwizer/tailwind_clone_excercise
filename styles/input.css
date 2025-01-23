@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navHover {
+        @apply px-3 py-2 rounded-3xl
+    }
+
+    .navHover:hover {
+        @apply bg-fire-lighter-blue px-3 py-2 rounded-3xl
+    }
+
+    .navActive {
+        @apply bg-fire-lighter-blue px-3 py-2 rounded-3xl
+    }
+}
