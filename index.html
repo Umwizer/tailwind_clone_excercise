@@ -2,99 +2,109 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"></head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming Website Clone</title>
-    <link rel="stylesheet" href="./public/styles/output.css">
-</head>
+   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0-alpha.10/dist/tailwind.min.css" rel="stylesheet">
 
-<body class="m-3 font-quicksand">
-    <div id="heroSection" class="relative rounded-b-semifull block h-5xl overflow-hidden">
-        <div id="heroDesign" class="absolute min-w-full min-h-full -z-10">
-            <div id="design1"
-                class="bg-fire-blue absolute rounded-br-casualfull min-w-full min-h-full -z-10 right-quater w-xplarge">
-            </div>
-            <div id="design2"
-                class="bg-fire-light-blue absolute rounded-br-casualfull min-w-full min-h-full -z-20 right-thquater">
-            </div>
-            <div id="design3" class="bg-fire-lighter-blue absolute inset-0 min-w-full min-h-full -z-30">
-                <img src="./public/imgs/banner-image.jpeg"
-                    class="min-w-full min-h-full bg-contain bg-center opacity-15">
-            </div>
-        </div>
-        <nav class="flex justify-between mt-10">
-            <div id="logo" class="min-w-fit ml-8">
+    <link rel="stylesheet" href="https://www.nerdfonts.com/cheat-sheet">
+    <link rel="stylesheet" href="./public/styles/output.css">
+ 
+
+
+
+<body class="font-sans bg-gray-800 text-white">
+    <div id="heroSection" class="relative h-screen bg-cover bg-center" style="background-image: url('./public/imgs/banner-image.jpeg');">
+        <nav class="flex justify-between items-center p-6">
+            <div id="logo">
                 <a href="#home">
-                    <img src="./public/imgs/logo.png" alt="logo">
+                    <img src="./public/imgs/logo.png" alt="logo" class="h-12">
                 </a>
             </div>
-            <div id="nav" class="mr-24 my-auto">
-                <ul id="navList" class="flex gap-x-12 min-h-full items-center justify-center text-white">
-                    <li class="navHover navActive"><a href="#Home">Home</a></li>
-                    <li class="navHover"><a href="#OurShop">Our Shop</a></li>
-                    <li class="navHover"><a href="#productDetails">Product Details</a></li>
-                    <li class="navHover"><a href="#contactUs">Contact Us</a></li>
-                    <li><button class="rounded-3xl bg-fire-pink px-5 py-2 font-extrabold">SIGNIN</button></li>
+            <div id="nav">
+                <ul class="flex space-x-12 text-lg">
+                    <li><a href="#Home" class="hover:text-pink-500">Home</a></li>
+                    <li><a href="#OurShop" class="hover:text-pink-500">Our Shop</a></li>
+                    <li><a href="#productDetails" class="hover:text-pink-500">Product Details</a></li>
+                    <li><a href="#contactUs" class="hover:text-pink-500">Contact Us</a></li>
+                    <li><button class="bg-pink-500 px-5 py-2 rounded-full text-white font-semibold">SIGN IN</button></li>
                 </ul>
             </div>
         </nav>
-        <div id="heroCenter" class="px-8 mt-32 mx-auto grid grid-cols-2 gap-x-3 border-pink-600">
-            <div id="text"
-                class="border-yellow-400 min-w-full min-h-full text-white font-roboto font-semibold flex flex-col gap-2">
-                <span class="block text-lg">WELCOME TO LUGX</span>
-                <span class="block text-5xl font-bold pr-20 leading-tight">BEST GAMING SITE EVER!</span>
-                <img src="./public/imgs/heroRibbon.png" alt="img"
-                    class="w-fit h-fit object-contain pl-28 relative bottom-5">
-                <p class="font-normal mt-8">LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming
-                    websites. You can download
-                    and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
-                <div id="heroInput" class="mt-12 font-normal">
-                    <input type="text" class="w-80 px-3 py-3 rounded-3xl" placeholder="Type Something">
-                    <button class="bg-fire-pink rounded-3xl px-5 py-3 relative right-10 font-medium">SEARCH NOW</button>
-                </div>
-            </div>
-            <div id="image" class="min-w-full min-h-full px-5 pt-2 flex relative text-white">
-                <img src="./public/imgs/banner-image.jpeg" alt="img" class="ml-auto rounded-3xl w-85 h-auto mr-16">
-                <span
-                    class="bg-fire-lighter-blue absolute right-24 top-7 w-fit font-extrabold rounded-3xl px-4 py-1 text-2xl font-roboto">$22</span>
-                <span
-                    class="bg-fire-pink absolute font-bold text-3xl font-roboto px-4 py-8 -bottom-8 left-36 rounded-full">-40%</span>
-            </div>
-        </div>
-    </div>
-    <div id="tabSection" class="relative mx-auto">
-        <div id="tab_Bars" class="relative flex justify-center gap-10 -top-16">
-            <div id="tab"
-                class="border bg-white rounded-3xl flex flex-col justify-center content-center min-w-fit w-fit px-14 py-7 drop-shadow shadow-black">
-                <div id="imgHolder" class="rounded-full p-5 bg-blue-700 mx-auto">
-                    <img src="./public/imgs/hero_feature_1.png" alt="img">
-                </div>
-                <span class="font-roboto font-extrabold mt-7">FREE STORAGE</span>
-            </div>
-            <div id="tab"
-                class="border bg-white rounded-3xl flex flex-col justify-center content-center min-w-fit w-fit px-14 py-7 drop-shadow shadow-black">
-                <div id="imgHolder" class="rounded-full p-5 bg-blue-700 mx-auto">
-                    <img src="./public/imgs/hero_feature_2.png" alt="img">
-                </div>
-                <span class="font-roboto font-extrabold mt-7">USER MORE</span>
-            </div>
-            <div id="tab"
-                class="border bg-white rounded-3xl flex flex-col justify-center content-center min-w-fit w-fit px-14 py-7 drop-shadow shadow-black">
-                <div id="imgHolder" class="rounded-full p-5 bg-blue-700 mx-auto">
-                    <img src="./public/imgs/hero_feature_3.png" alt="img">
-                </div>
-                <span class="font-roboto font-extrabold mt-7">REPLY READY</span>
-            </div>
-            <div id="tab"
-                class="border bg-white rounded-3xl flex flex-col justify-center content-center min-w-fit w-fit px-14 py-7 drop-shadow shadow-black">
-                <div id="imgHolder" class="rounded-full p-5 bg-blue-700 mx-auto">
-                    <img src="./public/imgs/hero_feature_4.png" alt="img">
-                </div>
-                <span class="font-roboto font-extrabold mt-7">EASY LAYOUT</span>
-            </div>
-        </div>
-    </div>
-    <script src="./public/src/main.js"></script>
-</body>
 
+        <div class="flex justify-between items-center px-8 py-16">
+            <div class="text-white max-w-lg">
+                <h1 class="text-5xl font-extrabold">BEST GAMING SITE EVER!</h1>
+                <p class="mt-4">LUGX Gaming is a free HTML CSS website template for gaming websites. You can download and use this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
+                <div class="mt-8">
+                    <input type="text" class="w-80 px-3 py-3 rounded-full text-gray-800" placeholder="Type something...">
+                    <button class="bg-pink-500 text-white px-5 py-3 rounded-full mt-4">SEARCH NOW</button>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0">
+                <img src="./public/imgs/banner-image.jpeg" alt="Gaming Banner" class="rounded-lg shadow-lg w-96">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-900 py-16 text-center">
+        <h2 class="text-3xl font-extrabold">Trending Games</h2>
+        <div class="grid grid-cols-4 gap-6 mt-8 px-6">
+            <!-- Game 1 -->
+            <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                <img src="./public/imgs/trending-01.jpeg" alt="Game" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-300">Action</p>
+                    <h3 class="text-lg font-semibold">Assassin Creed</h3>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-green-400 font-bold">$20</span>
+                        <button class="bg-pink-500 px-3 py-2 rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Game 2 -->
+            <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                <img src="./public/imgs/trending-02.jpeg" alt="Game" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-300">Action</p>
+                    <h3 class="text-lg font-semibold">Cyberpunk 2077</h3>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-green-400 font-bold">$32</span>
+                        <button class="bg-pink-500 px-3 py-2 rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Game 3 -->
+            <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                <img src="./public/imgs/trending-03.jpeg" alt="Game" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-300">Adventure</p>
+                    <h3 class="text-lg font-semibold">The Witcher 3</h3>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-green-400 font-bold">$44</span>
+                        <button class="bg-pink-500 px-3 py-2 rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Game 4 -->
+            <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+                <img src="./public/imgs/trending-04.jpeg" alt="Game" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-300">Shooter</p>
+                    <h3 class="text-lg font-semibold">Call of Duty</h3>
+                    <div class="flex justify-between items-center mt-2">
+                        <span class="text-green-400 font-bold">$28</span>
+                        <button class="bg-pink-500 px-3 py-2 rounded-lg">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-center py-6 text-gray-400">
+        <p>© 2025 Gaming Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
